@@ -3,17 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "DEBUG=app,server,router,db,config node app.js"
   },
   "dependencies": {
     "body-parser": "~1.0.0",
     "cookie-parser": "~1.0.1",
     "debug": "~0.7.4",
     "express": "~4.2.0",
-    "express-session": "^1.6.5",
+    "express-session": "^1.6.5", 
     "hogan-middleware": "*",
     "jade": "~1.3.0",
+    "method-override": "^2.1.1",
     "mongodb": "*",
+    "mongoose": "^3.8.13",
     "monk": "*",
     "morgan": "~1.0.0",
     "passport": "^0.2.0",

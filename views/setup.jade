@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1= title
+	form#formAddUser(name="setup", method="post", action="")
+		input#inputAdminEmail(type="email", placeholder="Admin Email", name="adminEmail")
+		input#inputAdminPassword(type="password", placeholder="password", name="adminPassword")
+		button#btnSubmit(type="submit") submit

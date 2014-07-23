@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  .container
+    h1 Bad-Ass CP Installation
+    hr
+    form(action='/setup', method='post')
+      div
+        input(type='text', name='username', placeholder='admin')
+        br
+      div
+        input(type='email', name='email', placeholder='admin@domain.com')
+        br
+      div
+        input(type='password', name='password', placeholder='password_123!')
+        br
+      div
+        input(type='submit', value='Setup BACP!')

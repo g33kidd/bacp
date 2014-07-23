@@ -1,0 +1,27 @@
+body {
+  padding:0px;
+  font-family: 'Open Sans',X-LocaleSpecific,sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color:#F7F5F2;
+
+  a { color: #00B7FF; }
+
+  h1 { font-size: 48px; letter-spacing: -2px; }
+  h2 { font-size: 32px; letter-spacing: -1px; }
+  h3 { font-size: 28px; letter-spacing: -0.5px; }
+  h4 { font-size: 24px; letter-spacing: -0.25px; }
+
+  .large { font-size: 72px; letter-spacing: -3px; line-height: 100%; }
+  .small, small { font-size: 12px; line-height: 100%; }
+  .light { font-weight: 300; }
+
+  .container {
+    background-color:#FFFFFF;
+    width:960px;
+    margin:0 auto;
+    border-top:4px solid #50BFA4;
+    padding:10px 20px;
+  }
+
+}

@@ -1,19 +1,17 @@
 var debug = require('debug')('app'),
     app = require('./lib/server'),
-    redis = require('./lib/redis'),
-    db = require('./lib/db');
+    redis = require('./lib/redis');
 
-// Router Handlers
-var basicHandler = require('./lib/handler/index')(db);
-var userHandler = require('./lib/handler/user')(db);
-var setupHandler = require('./lib/handler/setup')(db);
+var models = require('./lib/models');
+var controllers = require('./lib/controllers');
+var routes = require('./lib/routes');
 
 require('./lib/config')(__dirname, app);
-require('./lib/router')(app, basicHandler);
-require('./lib/router/users')(app, userHandler);
-require('./lib/router/setup')(app, setupHandler);
+
+routes.setup(app, controllers);
 
 app.set('port', process.env.PORT || 3000);
+
 var server = app.listen(app.get('port'), function() {
   debug('Express server listening on port %d in %s mode', server.address().port, process.env.NODE_ENV);
 });

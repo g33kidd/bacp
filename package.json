@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "DEBUG=app,server,routes,models,config,controllers,redis node app.js"
+    "start": "DEBUG=app,server,routes,models,config,controllers,redis nodemon app.js"
   },
   "dependencies": {
     "body-parser": "~1.0.0",

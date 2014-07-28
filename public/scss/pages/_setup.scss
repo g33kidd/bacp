@@ -1,0 +1,10 @@
+.setup-header {
+	margin-bottom:50px;
+	.title {
+		font-size:35px;
+		float:right;
+	}
+	&:after {
+		clear:both;
+	}
+}
